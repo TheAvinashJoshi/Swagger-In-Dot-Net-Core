@@ -1,0 +1,18 @@
+Source code:
+builder.Services.AddSwaggerGen(c => {
+    c.SwaggerDoc("v1", new OpenApiInfo
+    {
+        Title = "My API",
+        Version = "v1",
+        Description = "ASP.NET Core Web API with Swagger",
+        Contact = new OpenApiContact
+        {
+            Name = "Your Name",
+            Email = "you@example.com"
+        }
+    });
+
+});
+
+app.UseSwagger();
+app.UseSwaggerUI();
